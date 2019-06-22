@@ -50,6 +50,15 @@ def main(task_for):
             "try": all_tests,
             "try-taskcluster": [
                 # Add functions here as needed, in your push to that branch
+                linux_tidy_unit_docs,
+                windows_unit,
+                windows_x86,
+                windows_arm64,
+                macos_unit,
+                magicleap_dev,
+                android_arm32_dev,
+                android_x86_wpt,
+                linux_release,
             ],
             "master": [
                 upload_docs,
