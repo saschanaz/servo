@@ -397,7 +397,7 @@ fn create_backend() -> Box<dyn Backend> {
 }
 
 #[cfg(feature = "raqote_backend")]
-fn create_backend() -> Box<Backend> {
+fn create_backend() -> Box<dyn Backend> {
     Box::new(crate::raqote_backend::RaqoteBackend)
 }
 
